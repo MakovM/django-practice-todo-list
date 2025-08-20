@@ -10,9 +10,7 @@ from todo_list.models import Task, Tag
 class TaskListView(generic.ListView):
     model = Task
     template_name = "todo_list/index.html"
-    queryset = Task.objects.all().prefetch_related("tags").order_by(
-        "is_done", "-created_at"
-    )
+    queryset = Task.objects.all().prefetch_related("tags")
 
 
 class TaskCreateView(generic.CreateView):

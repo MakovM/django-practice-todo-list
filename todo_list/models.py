@@ -22,7 +22,7 @@ class Task(models.Model):
     )
 
     class Meta:
-        ordering = ["-created_at"]
+        ordering = ["is_done", "-created_at"]
 
     def __str__(self) -> str:
         return self.content
