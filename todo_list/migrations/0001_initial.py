@@ -43,7 +43,10 @@ class Migration(migrations.Migration):
                 ("is_done", models.BooleanField(default=False)),
                 (
                     "tags",
-                    models.ManyToManyField(related_name="tasks", to="todo_list.tag"),
+                    models.ManyToManyField(
+                        related_name="tasks",
+                        to="todo_list.tag"
+                    ),
                 ),
             ],
             options={
