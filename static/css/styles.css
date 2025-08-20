@@ -1,0 +1,16 @@
+.task-btn {
+    float: right;
+    margin: 10px;
+}
+
+.task-is-done {
+    color: #006b1b;
+}
+
+.task-not-done {
+    color: red;
+}
+
+.deadline {
+    color: darkred;
+}
